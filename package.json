@@ -1,7 +1,7 @@
 {
   "name": "jaqueline-gomes",
   "version": "0.1.0",
-  "homepage": "https://csantos31.github.io/jaqueline-gomes",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "6.7.2",
@@ -11,6 +11,7 @@
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^14.6.1",
     "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.4",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "events": "^3.3.0",
@@ -48,7 +49,6 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^22.13.5",
     "gh-pages": "^6.3.0"
   }
 }
