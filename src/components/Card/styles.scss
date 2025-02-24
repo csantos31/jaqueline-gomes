@@ -1,0 +1,33 @@
+.projectItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 6rem;
+  height: auto;
+  padding-bottom: 0.8rem;
+
+  .description {
+    display: flex;
+    width: 40rem;
+    flex-direction: column;
+
+    h1 {
+      font-size: 26px;
+    }
+
+    span {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .projectItem {
+    .description {
+      width: 100%;
+    }
+  }
+}
