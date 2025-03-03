@@ -3,7 +3,6 @@ import "./styles.scss";
 import { Card } from "../Card";
 import externalDataSample from "../../data/content.json";
 import { CardItem } from "../../types/Card";
-import profile from '../../images/profile.jpg'
 
 export function ProfessionalExperiencesComponent() {
   const [professionalExperiences, setProfessionalExperiences] = useState<CardItem[] | null>([]);
@@ -17,18 +16,16 @@ export function ProfessionalExperiencesComponent() {
       <h2>Experiências profissionais</h2>
       <div className="content">
         <div className="experiences">
-          {professionalExperiences?.map((experienceItem) => {
+          {professionalExperiences?.map((experienceItem, key) => {
             return (
               <Card
+                key={key}
                 name={experienceItem.name}
                 description={experienceItem.description}
               />
             );
           })}
         </div>
-        {/* <div className="image">
-          <img src={profile} alt="Foto de perfil profissional" />
-        </div> */}
       </div>
     </section>
   );

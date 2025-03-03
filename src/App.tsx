@@ -11,7 +11,7 @@ import { Volunteering } from './components/Volunteering';
 function App() {
   return (
     <div className="App">
-      <Menu/>
+      {/* <Menu/> */}
       <Hero/>
       <Contact/>
       <Background/>

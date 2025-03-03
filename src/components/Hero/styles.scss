@@ -1,17 +1,15 @@
 header {
   display: flex;
-  // **********************************
-  // descomentar linhas abaixo caso os ítens fiquem em linhas
-  // *flex-direction: column;
-  // *align-items: center;
-  // **********************************
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 2.5rem;
 
-  .image {
+  .logo-image {
     justify-content: center;
-    width: 22%;
+    width: 30%;
     align-content: center;
+
     img {
       background-color: white;
       width: 100%;
@@ -23,36 +21,17 @@ header {
     }
   }
 
-  .headline {
+  .presentation {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 1rem;
-    width: 70%;
-    text-align: justify;
+    gap: 2.5rem;
 
-    h1 {
-      font-size: 34px;
-    }
-
-    h2 {
-      padding-top: 2rem;
-      font-size: 28px;
-    }
-
-    span {
-      font-size: 24px;
-    }
-  }
-}
-
-@media (max-width: 468px) {
-  header {
     .image {
-      width: 80%;
-      
+      justify-content: center;
+      width: 22%;
+      align-content: center;
+
       img {
+        background-color: white;
         width: 100%;
         border: 2px solid var(--gold);
         border-radius: 0.5em;
@@ -61,9 +40,68 @@ header {
         opacity: 0.8;
       }
     }
+
     .headline {
-      padding: 0;
-      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      padding-top: 1rem;
+      width: 70%;
+      text-align: justify;
+
+      h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        padding-top: 2rem;
+        font-size: 28px;
+      }
+
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  header {
+    .logo-image {
+      justify-content: center;
+      width: 60%;
+      align-content: center;
+  
+      img {
+        background-color: white;
+        width: 90%;
+        border: 2px solid var(--gold);
+        border-radius: 0.5em;
+        margin: 0;
+        padding: 0.5rem;
+        opacity: 0.8;
+      }
+    }
+
+    .presentation {
+      .image {
+        width: 80%;
+        margin: auto;
+
+        img {
+          width: 94%;
+          border: 2px solid var(--gold);
+          border-radius: 0.5em;
+          margin: 0;
+          padding: 0.5rem;
+          opacity: 0.8;
+        }
+      }
+      .headline {
+        padding: 0;
+        width: 100%;
+      }
     }
   }
 }

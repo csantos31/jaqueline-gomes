@@ -3,7 +3,6 @@ import "./styles.scss";
 import { Card } from "../Card";
 import externalDataSample from "../../data/content.json";
 import { CardItem } from "../../types/Card";
-import psicoloLogo from '../../images/psico-logo.jpg'
 
 export function BackgroundComponent() {
   const [backgroundItems, setBackgroundItems] = useState<CardItem[] | null>([]);
@@ -17,18 +16,16 @@ export function BackgroundComponent() {
       <h2>Formação Acadêmica</h2>
       <div className="content">
         <div>
-          {backgroundItems?.map((backgroundItem) => {
+          {backgroundItems?.map((backgroundItem, key) => {
             return (
               <Card
+                key={key}
                 name={backgroundItem.name}
                 description={backgroundItem.description}
               />
             );
           })}
         </div>
-        {/* <div className="image">
-          <img src={psicoloLogo} alt="Logo do símbolo do psicólogo" />
-        </div> */}
       </div>
     </section>
   );

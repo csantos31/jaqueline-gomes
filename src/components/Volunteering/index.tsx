@@ -17,9 +17,10 @@ export function VolunteeringComponent() {
       <h2>Voluntariado</h2>
       <div className="content">
         <div>
-          {volunteeringItems?.map((volunteeringItem) => {
+          {volunteeringItems?.map((volunteeringItem, key) => {
             return (
               <Card
+                key={key}
                 name={volunteeringItem.name}
                 description={volunteeringItem.description}
               />
