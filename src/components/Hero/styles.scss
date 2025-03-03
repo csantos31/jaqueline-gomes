@@ -1,5 +1,10 @@
 header {
   display: flex;
+  // **********************************
+  // descomentar linhas abaixo caso os ítens fiquem em linhas
+  // *flex-direction: column;
+  // *align-items: center;
+  // **********************************
   justify-content: center;
   gap: 2.5rem;
 
@@ -25,6 +30,7 @@ header {
     justify-content: center;
     padding-top: 1rem;
     width: 70%;
+    text-align: justify;
 
     h1 {
       font-size: 34px;

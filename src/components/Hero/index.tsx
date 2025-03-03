@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.scss";
-import profileImage from "../../images/logo.png";
+import profileImage from "../../images/profile.jpg";
 
 export function HeroComponent() {
   return (
@@ -10,7 +10,6 @@ export function HeroComponent() {
           <img src={profileImage} alt="Profile image" />
         </div>
         <div className="headline">
-          <h1>Jaqueline Gomes de Siqueira</h1>
           <h2>Profissional em Psicologia e Neuropsicologia</h2>
           <br />
           <span>

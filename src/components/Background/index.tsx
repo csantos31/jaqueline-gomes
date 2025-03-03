@@ -26,9 +26,9 @@ export function BackgroundComponent() {
             );
           })}
         </div>
-        <div className="image">
+        {/* <div className="image">
           <img src={psicoloLogo} alt="Logo do símbolo do psicólogo" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

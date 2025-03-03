@@ -26,9 +26,9 @@ export function ProfessionalExperiencesComponent() {
             );
           })}
         </div>
-        <div className="image">
+        {/* <div className="image">
           <img src={profile} alt="Foto de perfil profissional" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

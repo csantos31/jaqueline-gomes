@@ -3,9 +3,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-
+    
     h3{
+        text-align: center;
         color: var(--primary-light);
     }    
 }
